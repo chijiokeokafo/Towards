@@ -10,6 +10,7 @@ $(function() {
 		console.log("clicked");
 
 		$("#main-nav").toggleClass("show");
+		$("body").toggleClass("clickable");
 
 	});
 
@@ -17,6 +18,7 @@ $(function() {
 		men++
 		if (($("#main-nav").attr("class") == "hide show") && (men > 1)) {
 			$("#main-nav").toggleClass("show");
+			$("body").toggleClass("clickable");
 			men = 0;
 			console.log(men);
 		} else {
