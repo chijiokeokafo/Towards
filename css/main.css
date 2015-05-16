@@ -293,6 +293,7 @@ div { font-family:"Relative Book", 'Century Gothic', Verdana, sans-serif; font-s
    #menu-button {
     width: 30px;
     height: 30px;
+    margin-right: 45px;
     /* background-color: #333; */
     display: inline-block;
     position: absolute;
@@ -336,6 +337,7 @@ div { font-family:"Relative Book", 'Century Gothic', Verdana, sans-serif; font-s
     left: 0px;
     /*padding-top: 37px;*/
     height: 50px;
+    z-index: 1;
    }
 
    #navigation img {
@@ -885,12 +887,15 @@ div { font-family:"Relative Book", 'Century Gothic', Verdana, sans-serif; font-s
 
 /* Carousel base class */
 .carousel {
-  margin-bottom: 60px;
+  margin-bottom: 50px;
   margin-top: 10px;
+/*  z-index: -1;*/
 }
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  z-index: 1;
+.carousel-control.left {
+  background-image: none !important;
+}
+.carousel-control.right {
+  background-image: none !important;
 }
 
 /* Declare heights because of positioning of img element */
@@ -907,9 +912,10 @@ div { font-family:"Relative Book", 'Century Gothic', Verdana, sans-serif; font-s
 
 .headerContainer {
   max-width: 1300px;
-  height: 620px;
+  height: 540px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 80px;
 }
 
 .content {
@@ -917,5 +923,40 @@ div { font-family:"Relative Book", 'Century Gothic', Verdana, sans-serif; font-s
   height: 620px;
   margin-left: auto;
   margin-right: auto;
+  font-family: "Visuelt Regular";
 }
 
+.content img {
+  height: 400px;
+  width: auto;
+}
+
+.feature4 {
+  margin-bottom: 20px;
+}
+
+/* 
+    Block-Styles 
+*/
+ 
+.block {
+    background-color:#ffffff;
+    margin-bottom:20px;
+}
+.block_inside { 
+    display:block; 
+    background: #ffffff url(images/background_block_slice.jpg) repeat-x;    
+/*    padding-left: 30px;
+    padding-left: 30px;*/
+    overflow:auto;
+}
+ 
+.image_block {
+
+    float:left;
+}
+.text_block {
+    float:left;
+    width:430px;
+    margin-left:30px;
+}
