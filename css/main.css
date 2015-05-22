@@ -293,7 +293,7 @@ div { font-family:"Relative Book", 'Century Gothic', Verdana, sans-serif; font-s
    #menu-button {
     width: 30px;
     height: 30px;
-    margin-right: 45px;
+    margin-right: 99px;
     /* background-color: #333; */
     display: inline-block;
     position: absolute;
@@ -302,7 +302,7 @@ div { font-family:"Relative Book", 'Century Gothic', Verdana, sans-serif; font-s
     font-family: "Visuelt Regular";
     /* font-weight: 700; */
     letter-spacing: 0.12em;
-    padding-top: 1.4em;
+    padding-top: 2.2em;
     cursor: pointer;
    }
 
@@ -343,7 +343,7 @@ div { font-family:"Relative Book", 'Century Gothic', Verdana, sans-serif; font-s
    #navigation img {
     width: 190px;
     height: auto;
-    padding-top: 1.25em;
+    padding-top: 1.0em;
    }
 
    .frontpage {
@@ -889,18 +889,24 @@ div { font-family:"Relative Book", 'Century Gothic', Verdana, sans-serif; font-s
 .carousel {
   margin-bottom: 50px;
   margin-top: 10px;
-/*  z-index: -1;*/
 }
-.carousel-control.left {
-  background-image: none !important;
-}
-.carousel-control.right {
+.carousel-control.left, .carousel-control.right {
   background-image: none !important;
 }
 
-/* Declare heights because of positioning of img element */
+.carousel-indicators {
+  padding-top: 40px;
+}
+.carousel-indicators li {
+  background-color: #D3D3D3 !important;
+  border: none;
+}
+.carousel-indicators .active {
+  background-color: #696969 !important;
+}
+
 .carousel .item {
-  height: 540px;
+  height: 532px;
   background-color:#555;
 }
 .carousel img {
@@ -911,15 +917,15 @@ div { font-family:"Relative Book", 'Century Gothic', Verdana, sans-serif; font-s
 }
 
 .headerContainer {
-  max-width: 1300px;
-  height: 540px;
+  max-width: 1200px;
+  height: 532px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 80px;
 }
 
 .content {
-  max-width: 1300px;
+  max-width: 1200px;
   height: 620px;
   margin-left: auto;
   margin-right: auto;
@@ -927,8 +933,8 @@ div { font-family:"Relative Book", 'Century Gothic', Verdana, sans-serif; font-s
 }
 
 .content img {
-  height: 400px;
-  width: auto;
+  height: auto;
+  width: 500px;
 }
 
 .feature4 {
@@ -945,9 +951,7 @@ div { font-family:"Relative Book", 'Century Gothic', Verdana, sans-serif; font-s
 }
 .block_inside { 
     display:block; 
-    background: #ffffff url(images/background_block_slice.jpg) repeat-x;    
-/*    padding-left: 30px;
-    padding-left: 30px;*/
+    background: #ffffff url(images/background_block_slice.jpg) repeat-x;   
     overflow:auto;
 }
  
@@ -959,4 +963,7 @@ div { font-family:"Relative Book", 'Century Gothic', Verdana, sans-serif; font-s
     float:left;
     width:430px;
     margin-left:30px;
+}
+#spacer {
+  height: 65px;
 }
