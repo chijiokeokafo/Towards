@@ -386,6 +386,7 @@ div { font-family:"Relative Book", 'Century Gothic', Verdana, sans-serif; font-s
     -webkit-animation: menuSlideIn 0.5s;
     animation: menuSlideIn 0.5s;
     right: 0%;
+    z-index: 2;
    }
 
    /* Animations */
@@ -937,17 +938,14 @@ div { font-family:"Relative Book", 'Century Gothic', Verdana, sans-serif; font-s
   width: 500px;
 }
 
-.feature4 {
-  margin-bottom: 20px;
-}
-
 /* 
     Block-Styles 
 */
  
 .block {
     background-color:#ffffff;
-    margin-bottom:20px;
+    margin-bottom: 40px;
+    margin-top: 40px
 }
 .block_inside { 
     display:block; 
@@ -967,3 +965,19 @@ div { font-family:"Relative Book", 'Century Gothic', Verdana, sans-serif; font-s
 #spacer {
   height: 65px;
 }
+
+  .wrap {
+    display:block;
+    position:absolute;
+    width:30%;
+    top:30%;
+    left:0;
+    z-index:2;
+    text-align:left;
+    color: white;
+    margin-left: 60px;
+  }
+
+  .wrap p, h2, h4 {
+    color: white;
+  }
