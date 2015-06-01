@@ -276,13 +276,13 @@ div { font-family:"Relative Book", 'Century Gothic', Verdana, sans-serif; font-s
    }
 
    #header {
-    height: 550px;
+    height: 532px;
     width: 100%;
-    /*background-image: url("/img/liamcrockard/header/header14.jpg");*/
+
     background-size: cover;
     background-position: center;
-    margin-top: 1.2em;
-    padding-top: 2em;
+    margin-top: 10px;
+    padding-top: 0px;
    }
 
    body.black {
