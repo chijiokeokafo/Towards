@@ -302,8 +302,9 @@ div { font-family:"Relative Book", 'Century Gothic', Verdana, sans-serif; font-s
     font-family: "Visuelt Regular";
     /* font-weight: 700; */
     letter-spacing: 0.12em;
-    padding-top: 2.2em;
+    padding-top: 20px;
     cursor: pointer;
+
    }
 
    /*#menu-button * {
@@ -904,6 +905,10 @@ div { font-family:"Relative Book", 'Century Gothic', Verdana, sans-serif; font-s
 }
 .carousel-indicators .active {
   background-color: #696969 !important;
+  width: 10px !important;
+  height: 10px !important;
+  margin-top: 1px !important;
+  margin-bottom: 1px !important;
 }
 
 .carousel .item {
@@ -961,6 +966,9 @@ div { font-family:"Relative Book", 'Century Gothic', Verdana, sans-serif; font-s
     float:left;
     width:430px;
     margin-left:30px;
+}
+.text_block h2 {
+  margin-top: -6px;
 }
 #spacer {
   height: 65px;
