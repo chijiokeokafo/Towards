@@ -142,7 +142,7 @@ div { font-family:"Relative Book", 'Century Gothic', Verdana, sans-serif; font-s
 
     /*width: auto;*/
     max-height: 100%;
-    /*margin-bottom: 15rem;*/
+
    }
 
    #introduction {
@@ -156,16 +156,18 @@ div { font-family:"Relative Book", 'Century Gothic', Verdana, sans-serif; font-s
 
    #introduction h3, h2 {
     margin: 0;
+    font-weight: bold;
    }
 
    #introduction h2 {
-    font-size: 2.75em;
+    font-size: 3.15em;
+    font-weight: bold;
    }
 
    #introduction p {
     font-family: "Visuelt Light";
     font-weight: 100;
-    font-size: 1.1em;
+    font-size: 1.3em;
     line-height: 1.5em;
     letter-spacing: 0.03em;
    }
@@ -182,6 +184,7 @@ div { font-family:"Relative Book", 'Century Gothic', Verdana, sans-serif; font-s
 
    .question {
     font-weight: 700;
+    font-size: 1.1em;
     /*margin-left: -32px;*/
    }
 
@@ -189,6 +192,7 @@ div { font-family:"Relative Book", 'Century Gothic', Verdana, sans-serif; font-s
 
    .answer {
     margin-left: 32px;
+    font-size: 1.1em;
    }
 
    .name {
@@ -293,33 +297,30 @@ div { font-family:"Relative Book", 'Century Gothic', Verdana, sans-serif; font-s
    #menu-button {
     width: 30px;
     height: 30px;
-    margin-right: 99px;
+   /* margin-right: 99px;*/
     /* background-color: #333; */
     display: inline-block;
-    position: absolute;
-    right: 30px;
+/*    position: fixed;*/
+    right: 120px;
     z-index: 1;
     font-family: "Visuelt Regular";
     /* font-weight: 700; */
     letter-spacing: 0.12em;
     padding-top: 20px;
+    padding-right: 5px;
     cursor: pointer;
+    margin-right: 10px;
+    float: right;
 
    }
 
-   /*#menu-button * {
-    width: 100%;
-    background-color: #f0f;
-    height: 3px;
-    margin-bottom: 6px;
-   }*/
-
    #menu-button div {
-    width: 100%;
+    width: inherit;
     /*background-color: #000;*/
     height: 3px;
     margin-bottom: 6px;
     font-family: "Visuelt Regular";
+
    }
 
    /*#menu-button:hover * {
@@ -332,7 +333,7 @@ div { font-family:"Relative Book", 'Century Gothic', Verdana, sans-serif; font-s
    }
 
    #navigation {
-    width: 100%;
+    max-width: inherit;
     /*position: fixed;*/
     top: 0px;
     left: 0px;
@@ -914,12 +915,14 @@ div { font-family:"Relative Book", 'Century Gothic', Verdana, sans-serif; font-s
 .carousel .item {
   height: 532px;
   background-color:#555;
+    max-width: inherit;
 }
 .carousel img {
   position: absolute;
   top: 0;
   left: 0;
   min-height: 540px;
+
 }
 
 .headerContainer {
@@ -974,20 +977,33 @@ div { font-family:"Relative Book", 'Century Gothic', Verdana, sans-serif; font-s
   height: 65px;
 }
 
-  .wrap {
-    display:block;
-    position:absolute;
-    width:30%;
-    top:30%;
-    left:0;
-    z-index:2;
-    text-align:left;
-    color: white;
-    margin-left: 60px;
-  }
+.wrap {
+  display:block;
+  position:absolute;
+  width:30%;
+  top:30%;
+  left:0;
+  z-index:2;
+  text-align:left;
+  color: white;
+  margin-left: 60px;
+}
 
-  .wrap p, h2, h4 {
-    color: white;
-  }
+.wrap p, h2, h4 {
+  color: white;
+}
+
+.lightbox img{
+  width: 100%;
+  max-height: 100%;
+  margin-bottom: 15rem;
+ }
+
+ .container-fluid {
+  max-width: 1200px !important;
+ }
+
+
+
 
 
