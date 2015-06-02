@@ -309,7 +309,7 @@ div { font-family:"Relative Book", 'Century Gothic', Verdana, sans-serif; font-s
     padding-top: 20px;
     padding-right: 5px;
     cursor: pointer;
-    margin-right: 10px;
+    margin-right: 12px;
     float: right;
 
    }
@@ -969,9 +969,10 @@ div { font-family:"Relative Book", 'Century Gothic', Verdana, sans-serif; font-s
     float:left;
     width:430px;
     margin-left:30px;
+    padding-bottom: 20px;
 }
 .text_block h2 {
-  margin-top: -6px;
+  margin-top: 0px;
 }
 #spacer {
   height: 65px;
