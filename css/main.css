@@ -912,7 +912,7 @@ ul {
     }
 }
 
-@media (max-width: 800px){
+@media (max-width: 1200px){
   #main-nav {
     background-color: rgba(80,80,80,0.9);
     width: 50%;
@@ -923,7 +923,7 @@ ul {
     color: #fff;
     font-size: 2em;
     cursor: pointer;
-   }
+  }
 
    .hide {
     /*display: none;*/
@@ -959,13 +959,18 @@ ul {
    .text_block {
     float:left;
     width:330px;
-    margin-left:auto;
+    padding-top: 10px;
+    margin-left:95px;
     margin-right: auto;
     padding-bottom: 20px;
     }
-    .block_inside img {
-      margin-right: auto;
+    .block_inside {
+      width: 500px;
       margin-left: auto;
+      margin-right: auto;
+    }
+    .block {
+      margin-bottom: -15px;
     }
 }
 
@@ -1047,8 +1052,14 @@ ul {
     float:left;
     width:230px;
     margin-right: auto;
+    margin-left: 40px;
     padding-bottom: 20px;
     }
+  .block_inside {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 
