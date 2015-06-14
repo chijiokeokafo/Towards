@@ -185,6 +185,7 @@ div { font-family:"Relative Book", 'Century Gothic', Verdana, sans-serif; font-s
    .question {
     font-weight: 700;
     font-size: 1.1em;
+    margin-top: 20px;
     /*margin-left: -32px;*/
    }
 
@@ -193,6 +194,7 @@ div { font-family:"Relative Book", 'Century Gothic', Verdana, sans-serif; font-s
    .answer {
     margin-left: 32px;
     font-size: 1.1em;
+    margin-top: 20px;
    }
 
    .name {
@@ -264,6 +266,7 @@ div { font-family:"Relative Book", 'Century Gothic', Verdana, sans-serif; font-s
 
    .caption-sub {
     font-style: italic;
+
    }
 
    p a {
@@ -282,10 +285,9 @@ div { font-family:"Relative Book", 'Century Gothic', Verdana, sans-serif; font-s
    #header {
     height: 532px;
     width: 100%;
-
     background-size: cover;
     background-position: center;
-    margin-top: 10px;
+    margin-top: 18px;
     padding-top: 0px;
    }
 
@@ -338,7 +340,7 @@ div { font-family:"Relative Book", 'Century Gothic', Verdana, sans-serif; font-s
     top: 0px;
     left: 0px;
     /*padding-top: 37px;*/
-    height: 50px;
+    height: auto;
     z-index: 1;
    }
 
@@ -737,9 +739,15 @@ div { font-family:"Relative Book", 'Century Gothic', Verdana, sans-serif; font-s
   left: 0;
   min-height: 540px;
   max-width: 100%;
-
-
 }
+#navCarousel {
+  padding-top: 8px;
+}
+/*.navbar-default {
+  background-color: white !important;
+  border-color: white !important;
+  padding-bottom: 25px !important;
+}*/
 
 .headerContainer {
   max-width: auto;
@@ -747,10 +755,11 @@ div { font-family:"Relative Book", 'Century Gothic', Verdana, sans-serif; font-s
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 80px;
+
 }
 
 .content {
-  max-width: 1200px;
+  width: 80%;
   height: 620px;
   margin-left: auto;
   margin-right: auto;
@@ -791,7 +800,7 @@ div { font-family:"Relative Book", 'Century Gothic', Verdana, sans-serif; font-s
   margin-top: 0px;
 }
 #spacer {
-  height: 65px;
+  height: 70px;
 }
 
 .wrap {
@@ -822,9 +831,18 @@ max-width: 1200px !important;
 }*/
 
 ul {
-  padding-top: 50px;
+  padding-top: 55px;
   font-family: "Visuelt Regular";
   color: white !important;
+}
+.video {
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+#article img {
+  margin-top: 15px;
 }
 
 @media print {
@@ -894,7 +912,7 @@ ul {
     }
 }
 
-@media (max-width: 1000px){
+@media (max-width: 800px){
   #main-nav {
     background-color: rgba(80,80,80,0.9);
     width: 50%;
@@ -941,9 +959,13 @@ ul {
    .text_block {
     float:left;
     width:330px;
-    margin-left:30px;
+    margin-left:auto;
     margin-right: auto;
     padding-bottom: 20px;
+    }
+    .block_inside img {
+      margin-right: auto;
+      margin-left: auto;
     }
 }
 
