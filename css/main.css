@@ -278,7 +278,7 @@ div { font-family:"Relative Book", 'Century Gothic', Verdana, sans-serif; font-s
    }
 
    p a:hover {
-    color: #e1e1e1;
+    color: cornflowerblue;
     /*border-bottom: 1px solid #888;*/
    }
 
@@ -309,7 +309,7 @@ div { font-family:"Relative Book", 'Century Gothic', Verdana, sans-serif; font-s
     /* font-weight: 700; */
     letter-spacing: 0.12em;
     padding-top: 20px;
-    padding-right: 5px;
+    padding-right: 03em;
     cursor: pointer;
     margin-right: 12px;
     float: right;
@@ -348,6 +348,7 @@ div { font-family:"Relative Book", 'Century Gothic', Verdana, sans-serif; font-s
     width: 190px;
     height: auto;
     padding-top: 1.0em;
+    margin-left: 2.0em;
    }
 
    .frontpage {
@@ -812,8 +813,8 @@ div { font-family:"Relative Book", 'Century Gothic', Verdana, sans-serif; font-s
   z-index:2;
   text-align:left;
   color: white;
-  margin-left: 100px;
-  text-shadow: 1px 1px #696969;
+  margin-left: 150px;
+/*  text-shadow: 1px 1px #696969;*/
 }
 
 .wrap p, h2, h4 {
@@ -941,7 +942,7 @@ ul {
 
    #article img{
     /*margin: 0 0 25% 0;*/
-    width: 90%;
+    width: 100%;
 
     /*width: auto;*/
     max-height: 100%;
@@ -972,6 +973,31 @@ ul {
     .block {
       margin-bottom: -15px;
     }
+    #header {
+      height: 432px;
+    }
+    .headerContainer {
+      height: 432px;
+    }
+    #navCarousel {
+      height: 432px;
+    }
+    .carousel {
+      height: 432px;
+    }
+    .slide {
+      height: 432px;
+    }
+    .carousel-inner {
+      height: 432px;
+    }
+    .caption h1 {
+      font-size: x-large;
+    }
+  .vimeo {
+    height: 432px;
+  }
+
 }
 
 @media (max-width: 600px){
@@ -1059,6 +1085,37 @@ ul {
     width: 300px;
     margin-left: auto;
     margin-right: auto;
+  }
+  #header {
+    height: 332px;
+  }
+  .headerContainer {
+    height: 332px;
+  }
+  #navCarousel {
+    height: 332px;
+    font-size: 90%;
+  }
+  .carousel {
+    height: 332px;
+  }
+  .slide {
+    height: 332px;
+  }
+  .carousel-inner {
+    height: 332px;
+  }
+  .carousel-indicators {
+    display: none;
+  }
+  #introduction h2 {
+    font-size: 2.4em;
+  }
+  .answer {
+    margin-left: 0px;
+  }
+  .vimeo {
+    height: 332px;
   }
 }
 
