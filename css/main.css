@@ -1117,6 +1117,19 @@ ul {
   .vimeo {
     height: 332px;
   }
+  #introduction p {
+    font-size: 1.1em;
+  }
+  #logo img {
+    height: 30px;
+    width: auto;
+  }
+  #menu-button {
+    padding-top: 14px;
+  }
+  .caption {
+    margin-right: auto;
+  }
 }
 
 
