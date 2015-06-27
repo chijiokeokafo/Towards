@@ -9,6 +9,16 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
+a:visited, a:link, a:active
+{
+    text-decoration: none !important;
+}
+
+a:hover {
+    color: darkslategray !important;
+    text-decoration: none !important;
+
+   }
 
 html,
 button,
@@ -111,25 +121,14 @@ h1 {
   margin: 0;
 }
 
-   /* 
-
-   div { font-family:"Apercu Pro Light", 'Trebuchet MS', Arial, sans-serif; font-weight:200; font-style:normal; }
-div { font-family:"Reader Regular", Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size-adjust:0.53; font-weight:normal; font-style:normal; }
-div { font-family:"Visuelt Light", 'Helvetica Neue', 'Segoe UI', sans-serif; font-weight:200; font-style:normal; }
-div { font-family:"Value Sans Regular", sans-serif; font-weight:normal; font-style:normal; }
-div { font-family:"Reader Medium", Arial, 'Helvetica Neue', Helvetica, sans-serif; font-size-adjust:0.53; font-weight:500; font-style:normal; }
-div { font-family:"Apercu Bold", Calibri, sans-serif; font-size-adjust:0.508; font-weight:bold; font-style:normal; }
-div { font-family:"Apercu Regular", Calibri, sans-serif; font-size-adjust:0.508; font-weight:normal; font-style:normal; }
-div { font-family:"Relative Book", 'Century Gothic', Verdana, sans-serif; font-size-adjust:0.5; font-weight:normal; font-style:normal; } */
-
-   #article {
-    width: 60%;
-    max-width: 652px;
-    /*min-width: 489px;
-    width: 50%;*/
-    margin: 0 auto;
-    font-size: 1.3em;
-    letter-spacing: 0.02em;
+#article {
+width: 60%;
+max-width: 652px;
+/*min-width: 489px;
+width: 50%;*/
+margin: 0 auto;
+font-size: 1.3em;
+letter-spacing: 0.02em;
 
     
     /* Antialias */
@@ -735,9 +734,11 @@ div { font-family:"Relative Book", 'Century Gothic', Verdana, sans-serif; font-s
   /*background-size: 100%;*/
 }
 .carousel img {
-  position: absolute;
-  top: 0;
-  left: 0;
+  /*position: absolute;*/
+/*  top: 0;
+  left: 0;*/
+  margin-left: auto;
+  margin-right: auto;
   min-height: 540px;
   max-width: 100%;
 }
@@ -771,6 +772,11 @@ div { font-family:"Relative Book", 'Century Gothic', Verdana, sans-serif; font-s
   height: auto;
   width: 500px;
 }
+.content h2 a:hover {
+    color: cornflowerblue !important;
+    text-decoration: none !important;
+
+   }
 
 /* 
     Block-Styles 
@@ -782,9 +788,9 @@ div { font-family:"Relative Book", 'Century Gothic', Verdana, sans-serif; font-s
     margin-top: 40px
 }
 .block_inside { 
-    display:block; 
-    background: #ffffff url(images/background_block_slice.jpg) repeat-x;   
+    display:block;    
     overflow:auto;
+
 }
  
 .image_block {
@@ -916,7 +922,7 @@ ul {
 @media (max-width: 1200px){
   #main-nav {
     background-color: rgba(80,80,80,0.9);
-    width: 50%;
+    /*width: 50%;*/
     height: 100%;
     position: fixed;
     /*right: 0px;*/
@@ -924,6 +930,7 @@ ul {
     color: #fff;
     font-size: 2em;
     cursor: pointer;
+    z-index: 3;
   }
 
    .hide {
@@ -939,7 +946,11 @@ ul {
     animation: menuSlideIn 0.5s;
     right: 0%;
    }
-
+   #article {
+    max-width: 652px;
+    width: 80%;
+    margin: 0 auto;
+   } 
    #article img{
     /*margin: 0 0 25% 0;*/
     width: 100%;
@@ -947,6 +958,10 @@ ul {
     /*width: auto;*/
     max-height: 100%;
     /*margin-bottom: 15rem;*/
+   }
+
+   .answer {
+    margin-left: 0px;
    }
 
    #introduction {
@@ -958,6 +973,53 @@ ul {
     letter-spacing: 0.02em;
    }
    .text_block {
+    float:left;
+    width:330px;
+    padding-top: 10px;
+    margin-left:95px;
+    margin-right: auto;
+    padding-bottom: 20px;
+    }
+    .block_inside {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .block {
+      margin-bottom: -15px;
+    }
+    #header {
+      height: 432px;
+    }
+    .headerContainer {
+      height: 432px;
+    }
+    #navCarousel {
+      height: 432px;
+    }
+    .carousel {
+      height: 432px;
+    }
+    .slide {
+      height: 432px;
+    }
+    .carousel-inner {
+      height: 432px;
+    }
+    .caption h1 {
+      font-size: x-large;
+    }
+  .vimeo {
+    height: 432px;
+  }
+  .content {
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 1050px){
+  .text_block {
     float:left;
     width:330px;
     padding-top: 10px;
@@ -1010,6 +1072,7 @@ ul {
     top: 0px;
     color: #fff;
     font-size: 1.5em;
+    z-index: 3;
    }
 
    .hide {
