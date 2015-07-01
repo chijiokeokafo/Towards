@@ -15,7 +15,7 @@ a:visited, a:link, a:active
 }
 
 a:hover {
-    color: darkslategray !important;
+    color: black !important;
     text-decoration: none !important;
 
    }
@@ -761,7 +761,7 @@ letter-spacing: 0.02em;
 }
 
 .content {
-  width: 80%;
+  width: 961px;
   height: 620px;
   margin-left: auto;
   margin-right: auto;
@@ -783,7 +783,7 @@ letter-spacing: 0.02em;
 */
  
 .block {
-    background-color:#ffffff;
+ /*   background-color:#ffffff;*/
     margin-bottom: 40px;
     margin-top: 40px
 }
@@ -851,6 +851,11 @@ ul {
 #article img {
   margin-top: 15px;
 }
+.glyphicon {
+  margin-top: 260px;
+}
+
+
 
 @media print {
     * {
@@ -1013,18 +1018,29 @@ ul {
     height: 432px;
   }
   .content {
-    width: 100%;
+    width: 95%;
+  }
+  .content img {
+  height: auto;
+  width: 400px;
+  margin-bottom: 20px;
+  }
+  .wrap {
+    margin-left: 100px;
+  }
+  .glyphicon {
+    margin-top: 200px;
   }
 
 }
 
-@media (max-width: 1050px){
+@media (max-width: 950px){
   .text_block {
     float:left;
-    width:330px;
+    width: 500px;
     padding-top: 10px;
-    margin-left:95px;
-    margin-right: auto;
+    margin-left: 0;
+   /* margin-right: auto;*/
     padding-bottom: 20px;
     }
     .block_inside {
@@ -1059,6 +1075,29 @@ ul {
   .vimeo {
     height: 432px;
   }
+  .wrap {
+    margin-right: 90%;
+  }
+  .content img {
+    width: 500px;
+  }
+  .carousel img {
+    display: none !important;
+  }
+  #slide1 {
+    background-image: url('../img/LiamHeader_med.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+  #slide2 {
+    background-image: url('../img/SkyHeader_med.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+  #slide3 {
+    background-image: url('../img/ColleenHeader_med.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
 
 }
 
@@ -1090,12 +1129,12 @@ ul {
    }
 
    #article {
-    width: 80%;
+    width: 90%;
     max-width: 652px;
     /*min-width: 489px;
     width: 50%;*/
     margin: 0 auto;
-    font-size: 1.3em;
+    font-size: 16px;
     letter-spacing: 0.02em;
 
     
@@ -1105,7 +1144,7 @@ ul {
 
    #article img{
     /*margin: 0 0 25% 0;*/
-    width: 90%;
+    /*width: 90%;*/
 
     /*width: auto;*/
     max-height: 100%;
@@ -1117,7 +1156,7 @@ ul {
     /*min-width: 489px;*/
     width: 90%;
     margin: 0 auto;
-    font-size: 1.3em;
+    font-size: 16px;
     letter-spacing: 0.02em;
    }
    .frontpage {
@@ -1139,34 +1178,34 @@ ul {
 
    .text_block {
     float:left;
-    width:230px;
+    width:100%;
     margin-right: auto;
-    margin-left: 40px;
+    margin-left: auto;
     padding-bottom: 20px;
     }
   .block_inside {
-    width: 300px;
+    width: 250px;
     margin-left: auto;
     margin-right: auto;
   }
   #header {
-    height: 332px;
+    height: 250px;
   }
   .headerContainer {
-    height: 332px;
+    height: 250px;
   }
   #navCarousel {
-    height: 332px;
+    height: 250px;
     font-size: 90%;
   }
   .carousel {
-    height: 332px;
+    height: 250px;
   }
   .slide {
-    height: 332px;
+    height: 250px;
   }
   .carousel-inner {
-    height: 332px;
+    height: 250px;
   }
   .carousel-indicators {
     display: none;
@@ -1178,7 +1217,7 @@ ul {
     margin-left: 0px;
   }
   .vimeo {
-    height: 332px;
+    height: 300px;
   }
   #introduction p {
     font-size: 1.1em;
@@ -1193,6 +1232,31 @@ ul {
   .caption {
     margin-right: auto;
   }
+  .wrap {
+    margin-right: auto;
+    margin-left: 11%;
+    margin-top: -65px;
+  }
+  .glyphicon {
+    display: none !important;
+  }
+/*  .carousel img {
+    display: none !important;
+  }*/
+  #slide1 {
+    background-image: url('../img/LiamHeader_sml.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+  #slide2 {
+    background-image: url('../img/SkyHeader_sml.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+  #slide3 {
+    background-image: url('../img/ColleenHeader_sml.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
 }
 
 
